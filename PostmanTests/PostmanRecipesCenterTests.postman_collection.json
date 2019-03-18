@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "823b6199-eb5f-4047-9fed-1ee8b58179fd",
+		"name": "PostmanRecipesCenterTests",
+		"description": "Postman RecipesCenter Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ConverterParaGramas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConverterParaOncas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49364/api/conversor/converterparaoncas/150",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49364",
+					"path": [
+						"api",
+						"conversor",
+						"converterparaoncas",
+						"150"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReceitaGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49364/api/receita",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49364",
+					"path": [
+						"api",
+						"receita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReceitaGetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:49364/api/receita/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49364",
+					"path": [
+						"api",
+						"receita",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReceitaPut",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 11,\n    \"nome\": \"Lasanha - 11\",\n    \"tempoPreparoEmMinutos\": 60,\n    \"rendimentoEmPorcoes\": 10,\n    \"ingredientes\": \"Massa de lasanha; Molho de tomate, Carne moída, Queijo, Presunto.\",\n    \"modoDePreparo\": \"Cozinhe a massa; Monte a lasanha, Asse no forno por 40 min.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:49364/api/receita/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49364",
+					"path": [
+						"api",
+						"receita",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReceitaDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 11,\n    \"nome\": \"Lasanha - 11\",\n    \"tempoPreparoEmMinutos\": 60,\n    \"rendimentoEmPorcoes\": 10,\n    \"ingredientes\": \"Massa de lasanha; Molho de tomate, Carne moída, Queijo, Presunto.\",\n    \"modoDePreparo\": \"Cozinhe a massa; Monte a lasanha, Asse no forno por 40 min.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:49364/api/receita/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49364",
+					"path": [
+						"api",
+						"receita",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
